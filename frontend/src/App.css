@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  align-items: center;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+
+    background: linear-gradient(#141e30, #243b55);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+
+  
+}
+.input-container {
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 40px;
+    position: relative;
+}
+label {
+    position: absolute;
+    left: 0;
+    color:#03e9f4
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color:white;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+  margin-left: 10px;
+background: transparent;
+    color: white;
+}
+.navbar_container {
+  display: flex;
+  height: 50px;
+  background-color: slategray;
+  gap: 22px;
+  padding-left:20px;
+}
+.nav-item {
+  color: white;
+  cursor: pointer;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item:hover {
+  color: black;
+  border-radius: 4px;
+}
+.button-container {
+  width: 500px;
+  cursor: pointer;
+}
+.button-container :hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 10px #03e9f4;
+}
+.button {
+  padding: 8px;
+  background: aqua;
+  border-radius: 4px;
+  width:100%;
+  margin-top: 10px;
+
+}
+.success-container  {
+color: springgreen;
+    position: absolute;
+    bottom: 15%;
+    /* left: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.details_container {
+  display: flex;
+}
+table {
+  padding:10px;
+}
+tr {
+  margin: 20px 0px;
+}
+td {
+  width: 10%;
+}
+.loading-container {
+  font-size: 20px;
+  color: black;
+  margin-top:20px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
